@@ -108,7 +108,6 @@ public class ObjectMovement : MonoBehaviour
             // if no hit -> placement is not valid 
             if (!Physics.Raycast(ray, out RaycastHit hitInfo, 1.5f))
             {
-                print("didn't hit anything");
                 // not valid position
                 indicator.SetActive(true);
                 return false;
